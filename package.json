@@ -1,0 +1,16 @@
+{
+  "name": "lesson",
+  "version": "1.0.0",
+  "description": "My project",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "install": "node-gyp configure; node-gyp build ",
+    "test": "mocha"
+  },
+  "author": "Stanislav Sivinskiy",
+  "license": "ISC"
+}

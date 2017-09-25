@@ -1,0 +1,1 @@
+cmd_Release/obj.target/kramer.node := g++ -shared -pthread -rdynamic -m64  -Wl,-soname=kramer.node -o Release/obj.target/kramer.node -Wl,--start-group Release/obj.target/kramer/addon.o -Wl,--end-group 
