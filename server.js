@@ -33,7 +33,7 @@ res.end(String(addon("pow",Number(req.params.x), Number(req.params.y))));
     //delta_ll = Number(req.params.c1) * Number(req.params.a2) - Number(req.params.a1) * Number(req.params.c2);
     let obj = kramer("kramer",Number(req.params.a1), Number(req.params.b1), Number(req.params.c1), Number(req.params.a2),  Number(req.params.b2),  Number(req.params.c2));
 	//res.end(`NativeJS : x = ${delta_l / delta}, y = ${delta_ll / delta} \nC++ addon: x = ${obj[0]}, y = ${obj[1]}`);
-	res.end(`x = ${obj[0]}, y = ${obj[1]}`);
+	res.end(`{"x":${obj[0]},"y":${obj[1]}}`);
 })
 .get('/*', req => req.res.end('hello from express calc!'))
 .listen(PORT || process.env.port);
