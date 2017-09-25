@@ -2,7 +2,7 @@
   "name": "lesson",
   "version": "1.0.0",
   "description": "My project",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "express": "^4.15.4"
   },
